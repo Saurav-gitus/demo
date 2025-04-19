@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Funniest Sign-Up Page</title>
+        <style>
+            body {
+                font-family: "Arial", sans-serif;
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+                color: #333;
+            }
+
+            .container {
+                max-width: 600px;
+                margin: 50px auto;
+                padding: 20px;
+                background: white;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 2rem;
+                color: #ff6f61;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 1rem;
+                margin-bottom: 20px;
+                color: #555;
+            }
+
+            .signup-form {
+                text-align: left;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+
+            input,
+            select {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                font-size: 1rem;
+            }
+
+            input:focus,
+            select:focus {
+                border-color: #ff6f61;
+                outline: none;
+                box-shadow: 0 0 5px rgba(255, 111, 97, 0.5);
+            }
+
+            .checkboxes label {
+                font-weight: normal;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            button {
+                background: #ff6f61;
+                color: white;
+                padding: 10px 20px;
+                font-size: 1rem;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background 0.3s;
+            }
+
+            button:hover {
+                background: #e55d50;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Welcome to AwkwardlyAwesome! 🎉</h1>
+            <p>Where Sign-Ups Are as Fun as Cat Memes.</p>
+
+            <form class="signup-form">
+                <label for="name">What do people call you (besides annoying)?</label>
+                <input type="text" id="name" placeholder="Your coolest alias here" required />
+
+                <label for="email">Where should we send spam? (Just kidding... or are we?)</label>
+                <input type="email" id="email" placeholder="your@email.com" required />
+
+                <label for="password">Shhh... your secret is safe with us 🤐</label>
+                <input type="password" id="password" placeholder="Something super secure, like '1234.'" required />
+
+                <label for="confirm-password">Prove you're not a robot by typing that again.</label>
+                <input type="password" id="confirm-password" placeholder="Seriously, we’re watching." required />
+
+                <label for="phone">Drop your digits, maybe? 📞</label>
+                <input type="tel" id="phone" placeholder="+1234567890 (We might call to say hi.)" />
+
+                <label for="age">How many years have you graced this planet?</label>
+                <select id="age">
+                    <option value="under18">Below 18 (You shouldn’t be here!)</option>
+                    <option value="18-99">18-99 (Welcome, wise one.)</option>
+                    <option value="100+">100+ (Teach us your secrets.)</option>
+                </select>
+
+                <label for="flavor">Because we need to judge your taste 🧐</label>
+                <input type="text" id="flavor" placeholder="Chocolate, Vanilla, or something fancy?" />
+
+                <div class="checkboxes">
+                    <label><input type="checkbox" required /> I promise not to use ‘password’ as my password.</label>
+                    <label
+                        ><input type="checkbox" required /> I agree to give up my soul (kidding, just agree to the
+                        terms).</label
+                    >
+                </div>
+
+                <button type="submit">Click Here to Join the Cool Kids’ Club! 🎉</button>
+            </form>
+        </div>
+    </body>
+</html>
